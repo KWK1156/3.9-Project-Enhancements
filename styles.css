@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/*
+Author: Kristopher Gonzalez
+Date: 01/11/2026
+Description: Stylesheet for the main layout and design of the website.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #f4f6f8, #dfe4ea);
+  color: #a8e8ec;
+}
+
+header {
+  background-color: #a3ccf5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease;
+}
+
+nav a:hover {
+  background-color: #005bb5;
+  color: white;
+}
+
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: rgb(13, 2, 71);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.582);
+  transition: transform 0.25s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #003366;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 0.9em;
+  padding: 15px;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  border: 2px solid gray;
+  background-color: white;
+  color: #a8e8ec;
+}
+
+.projects-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  padding: 6px 0;
+}
+
+.projects-table th,
+.projects-table td {
+  border: 1px solid gray;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.projects-table thead th {
+  background-color: #a3ccf5;
+}
+
+.projects-table tfoot td {
+  font-style: italic;
+}
+
+.projects-table col.highlight-col {
+  background-color: #fff3a6;
+}
+
+.img-placeholder {
+  width: 140px;
+  height: 90px;
+  border: 2px dashed #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
